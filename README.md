@@ -14,17 +14,17 @@ Previsão de consumo de energia de eletrodomésticos baseado em dados de sensore
 
 **Passos Realizados**:
 1. Exploração dos dados
-  o Estatística Descritiva (médias, quantiles, máximos)
+  - Estatística Descritiva (médias, quantiles, máximos)
   
 2. Visualização dos dados
-  o Histogramas, Boxplot, Gráficos de Barras
+  - Histogramas, Boxplot, Gráficos de Barras
 
 3. Limpeza e Transformação
-  o Criação de novas variáveis
-  o Remoção de Outliers da variável Target
+  - Criação de novas variáveis
+  - Remoção de Outliers da variável Target
   
 4. Engenharia de Atributos
-  o Criação de modelo simples de Random Forest para verificar importância de variáveis
+  - Criação de modelo simples de Random Forest para verificar importância de variáveis
   
 5. Criação de modelos XGB e SVM.
 
