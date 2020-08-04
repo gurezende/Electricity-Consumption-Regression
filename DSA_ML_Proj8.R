@@ -155,7 +155,9 @@ df_clean$t_media <- rowMeans(df_clean[,seq(3,19,2)])
 df_clean$rh_media <- rowMeans(df_clean[,seq(4,20,2)])
 
 # Correlação entre a nova coluna e nossa variável Target
-#cor(x=df_clean$cond_tempo, y= df_clean$Appliances)
+cor(x=df_clean$t_media, y= df_clean$Appliances)
+"Correlação de 0.23"
+
 #---
 
 
@@ -276,7 +278,7 @@ Resultados:
 #----
 
 ####### Previsões ##########
-"Optei por escolher o modelo XGB, dado o seu melhor desempenho em relação ao SVM."
+"Optei por escolher o modelo SVM, dado o seu desempenho semelhante ao XGB e por ser bem mais rápido."
 
 comparamodelos <- data.frame(XGB=c(round(maexgb,4), round(rmsexgb,4), round(r2xgb,4)),
                              SVM=c(round(maesvm,4), round(rmsesvm,4), round(r2svm,4)),
@@ -329,9 +331,12 @@ rmse = RMSE(previsoessvm, df_teste$target)
 r2 = R2(previsoessvm, df_teste$target, form = "traditional")
 cat(" MAE:", mae, "\n", "RMSE:", rmse, "\n", "R-squared:", r2)
 
+# Dataset Real vs. Performance
 perf <- data.frame(real = df_teste$target, Prev = previsoessvm)
 View(perf)
 
+
+#------- --- ---
 
 # Previsões XGB
 previsoesxgb <- predict(modelxgb, df_teste[,-27])
@@ -342,9 +347,7 @@ rmse = RMSE(previsoesxgb, df_teste$target)
 r2 = R2(previsoesxgb, df_teste$target, form = "traditional")
 cat(" MAE:", mae, "\n", "RMSE:", rmse, "\n", "R-squared:", r2)
 
+# Dataset Real vs. Performance
 perf <- data.frame(real = df_teste$target, Prev = previsoesxgb)
 View(perf)
 
-
-
-points(x=target, y=T1, data=df_myvars, fill='blue')
