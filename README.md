@@ -1,6 +1,6 @@
 # Electricity-Consumption-Regression
 
-Descrição detalhada neste link.
+Descrição detalhada neste [link.](https://bit.ly/31iofz9)
 
 - **Projeto**: Modelo preditivo de regressão.
 - **Ferramenta Utilizada**: Linguagem R
