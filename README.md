@@ -4,7 +4,7 @@ Descrição detalhada neste [link.](https://bit.ly/31iofz9)
 
 - **Projeto**: Modelo preditivo de regressão.
 - **Ferramenta Utilizada**: Linguagem R
-- **Dataset**: Dados fornecidos para o Projeto Final do Curso de Machine Learning da **Data Science Academy**. 
+- **Dataset**: Dados fornecidos para o Projeto Final do Curso de Machine Learning da Formação Cientista de Dados da **Data Science Academy**. 
 
 Variáveis: *Date, Appliances (target) , lights, T1, RH_1, T2, RH_2, T3, RH_3, T4, RH_4, T5, RH_5, T6, RH_6, T7, RH_7, T8, RH_8, T9, RH_9, T_out, Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, NSM, WeekStatus, Day_of_week*.
 
